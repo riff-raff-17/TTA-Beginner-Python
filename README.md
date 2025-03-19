@@ -9,3 +9,4 @@ The SLIDES folder contains all of the PowerPoint slides for the class.
 The NOTEBOOKS folder contains all of the Jupyter Notebooks for each session.
 
 # Getting Started
+Open a notebook in NOTEBOOKS and run the code
