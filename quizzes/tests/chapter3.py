@@ -84,11 +84,11 @@ questions = [
         with spaces included inside the quotes.''')
     },
     {
-        "question": 'How do you ask the user for a name and print "Hello, <name>!" correctly?',
-        "image": None,
-        "options": ['name = input("Enter your name: ")\n  print("Hello, " + name + "!")', "name = input(\"Enter your name: \")\n  print(\"Hello,\", name, \"!\")", 'name = input["Enter your name: "]', 'name = input("Enter your name", )'],
-        "answer": 2,
-        "explanation": "Correct syntax uses input() and print() with a comma for spacing."
+        "question": "The code below prints out user's birth year after their age has been input. What should be typed in the blank?",
+        "image": "tests/testpictures/c3q7.png",
+        "options": ['str', 'bool', 'int', 'float'],
+        "answer": 3,
+        "explanation": "Using 'int(input)' allows the birthyear to be calculated as an integer."
     },
     {
         "question": "What will happen if the user enters Friend?",
