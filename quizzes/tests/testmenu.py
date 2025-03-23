@@ -7,7 +7,7 @@ def menu_display(mode):
     clear_output(wait=True)
     if mode == "0":
         print('''Select test:
-        1. "Hello, World!" and other greetings
+        1. "Hello, World!" and Other Greetings
         2. Variables and Other Data Types
         3. Getting User Input
         4. Basic Operators (Math and Comparison)

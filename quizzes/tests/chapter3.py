@@ -1,6 +1,7 @@
 from IPython.display import display, Image
 
 def run_quiz(questions):
+    print("\nChapter 3: Getting User Input\n")
     score = 0
     for i, q in enumerate(questions, 1):
         print(f"Q{i}: {q['question']}")
