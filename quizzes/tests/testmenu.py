@@ -8,14 +8,14 @@ def menu_display(mode):
     if mode == "0":
         print('''Select test:
         1. "Hello, World!" and other greetings
-        2. Variables and Other Data Types (Coming Soon)
+        2. Variables and Other Data Types
         3. Getting User Input
         4. Basic Operators (Math and Comparison)
         5. Conditional Statements (if, elif, else)
         6. Loops (for and while loops)
         7. Functions (def and return)
         8. Lists and Basic List Operations
-        9. Dicionaries and Key-Value Pairs
+        9. Dictionaries and Key-Value Pairs
         10. Logical Operators (and, or not)
         11. Importing Modules (math, random, etc.)
         12. Basic Error Handling
