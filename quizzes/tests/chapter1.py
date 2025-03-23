@@ -42,7 +42,7 @@ def run_quiz(questions):
 questions = [
     {
         "question": "What application is currently being used to code and compile Python?",
-        "image": r"tests\testpictures\example.jpg",  # Change this to your actual image file path or set to None if not needed
+        "image": None,  # Change this to your actual image file path or set to None if not needed
         "options": ["Anaconda Navigator", "IDLE", "Jupyter Notebook", "Visual Studio"],
         "answer": 3, # The correct option number (1-based index)
         "explanation": "Jupyter Notebook is now being used to create programs with the Python Language."
@@ -70,46 +70,45 @@ questions = [
     },
     {
         "question": "What will this code print?",
-        "image": r"tests\testpictures\Q5.png",  
+        "image": "tests/testpictures/c1q5.png",  
         "options": ["Hello World", "Hello\n   World", "Hello\\nWorld", "Error"],
         "answer": 2,
         "explanation": "The \\n creates a new line, so 'World' appears on the next line."
     },
     {
         "question": "Which of the following will cause a syntax error?",
-        "image": r"tests\testpictures\Q6.1.png",  
+        "image": "tests/testpictures/c1q6.png",  
         "options": ["No error", "SyntaxError: Missing parentheses", "RuntimeError", "TypeError"],
         "answer": 2,
         "explanation": """In Python 3, print must be written as a function with parentheses: print("\\Hello, World!\\")."""
     },
     {
         "question": "What is the error in the following code?",
-        "image": r"tests\testpictures\Q7.1.png",  
+        "image": "tests/testpictures/c1q7.png",  
         "options": ["Missing print function", "No error", "print cannot handle strings", "String not closed properly"],
         "answer": 4,
         "explanation": """The string starts with a double quote (") but ends with a single quote ('). The correct version is: print("Python is fun!")."""
     },
     {
         "question": "What happens if you run this?",
-        "image": r"tests\testpictures\Q8.1.png",  
+        "image": "tests/testpictures/c1q8.png",  
         "options": ["Python is awesome!", "Python is \"awesome\"!", " SyntaxError", "\"Python is \"awesome\"!"],
         "answer": 3,
-        "explanation": """The inner double quotes around "awesome" break the string. The correct way is: print("Python is "awesome"!") or print('Python is     
-"awesome"!')."""
+        "explanation": """The inner double quotes around "awesome" break the string. The correct way is: print('Python is "awesome"!')."""
     },
     {
         "question": "Which of the following prints a single backslash (\\)?",
         "image": None,  
-        "options": ['print("\\")', 'print("\\\\")', 'print("/")', 'print("\\")'],
+        "options": ['print("\\")', 'print("\\\\")', 'print("/")', 'print("\\\\\\")'],
         "answer": 2,
         "explanation": 'The backslash (\\) is an escape character, so you must use "\\\\" to print a single backslash.'
     },
     {
         "question": "What is the error in the following code?",
-        "image": r"tests\testpictures\Q10.1.png",  
+        "image": "tests/testpictures/c1q10.png",  
         "options": ["No error", "Mismatched quotes", "print must use double quotes", "String too long"],
-        "answer": 2,
-        "explanation": """The string starts with a single quote (') but contains an unescaped double quote ("), causing a syntax error. Fix it by either using escape characters or consistent quotes: print('She said, "Python is fun!"') or print("She said, \"Python is fun!\"")"""
+        "answer": 1,
+        "explanation": "This string only has one double quote, but it is properly enclosed by single quotes, therefore this is still valid. (Try it out!)"
     },
 ]
 
